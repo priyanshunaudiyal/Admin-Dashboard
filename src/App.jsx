@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Users from "./pages/Users";
@@ -18,24 +13,13 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        {/* Public Route */}
         <Route path="/login" element={<Login />} />
 
-        {/* Protected Routes */}
         <Route
           path="/"
           element={
             <PrivateRoute>
               <Dashboard />
-            </PrivateRoute>
-          }
-        />
-
-        <Route
-          path="/activity"
-          element={
-            <PrivateRoute>
-              <Activity />
             </PrivateRoute>
           }
         />
@@ -49,7 +33,15 @@ const App = () => {
           }
         />
 
-        {/* Fallback */}
+        <Route
+          path="/activity"
+          element={
+            <PrivateRoute>
+              <Activity />
+            </PrivateRoute>
+          }
+        />
+
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
