@@ -6,33 +6,33 @@ This project focuses on **frontend architecture, UX, and scalability**, with a d
 
 ---
 
-## ✨ Features
+## Features
 
-### 🔐 Authentication (Frontend Demo)
+### Authentication (Frontend Demo)
 - Login with **Name, Email, and Password**
 - Session persistence using `localStorage`
 - Role-based access (Admin / Viewer simulation)
 - Last login timestamp tracking
 
-### 👤 User Management
+### User Management
 - Full **CRUD operations**
 - Search, filter, sorting, and pagination
 - Modal-based add/edit user flow
 - Role & status management
 - Persistent data across reloads and navigation
 
-### 📊 Real-Time Dashboard
+### Real-Time Dashboard
 - Live user statistics derived from shared state
 - Animated count-up metrics
 - Mini charts for user insights
 - Automatic updates on user changes (no refresh required)
 
-### 🧩 Activity Logs
+### Activity Logs
 - Tracks key user actions (add, update, delete)
 - Timestamped audit-style records
 - Stored persistently across sessions
 
-### 🎨 UI & UX
+### UI & UX
 - SaaS-style glassmorphism UI
 - Reusable card-based design system
 - Clean typography and spacing
@@ -41,7 +41,7 @@ This project focuses on **frontend architecture, UX, and scalability**, with a d
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **React (Vite)**
 - **Tailwind CSS**
@@ -50,8 +50,7 @@ This project focuses on **frontend architecture, UX, and scalability**, with a d
 - **LocalStorage** (mock persistence)
 
 ---
-
-## 🏗 Architecture Highlights
+## Architecture Highlights
 
 - Single source of truth for user data
 - Derived state for dashboard analytics
@@ -61,13 +60,13 @@ This project focuses on **frontend architecture, UX, and scalability**, with a d
 
 ---
 
-## 🔁 Backend-Ready Design
+## Backend-Ready Design
 
 Although this project uses `localStorage` for persistence, all data access is abstracted so that replacing it with a REST API or backend service requires minimal changes to UI components.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/your-username/admin-dashboard.git
