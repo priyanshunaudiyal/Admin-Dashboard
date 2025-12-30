@@ -17,7 +17,6 @@ const Header = () => {
     setLastLogin(localStorage.getItem("lastLogin") || "");
   }, []);
 
-  // ✅ Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -55,7 +54,7 @@ const Header = () => {
       {/* Left */}
       <div>
         <p className="text-sm text-gray-700">
-          Welcome back{userName ? `, ${userName}` : ""} 👋
+          Welcome back{userName ? `, ${userName}` : ""}
         </p>
         {lastLogin && (
           <p className="text-xs text-gray-400">
